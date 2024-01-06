@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>Watch Store (Charles Pajares)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <header class="header" id="header">
+      <nav class="nav container">
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li class="nav__item">
+                  <a href="#home-sectiom" class="nav__link" id="active">Home</a>
+               </li>
+               
+               <li class="nav__item">
+                  <a href="#featured-section" class="nav__link">Featured</a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="#products-section" class="nav__link">Products</a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="#new-section" class="nav__link">New</a>
+               </li>
+
+               <li class="nav__item">
+                <a id="cart-count" href="#checkout-section" class="nav__link">Cart(0)</a>
+               </li>
+             </li>
+            </ul>
+         </div>
+      </nav>
+   </header>
+
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+      <div class="frame-desktop-responsivewatcheswebsite-container">
+        <div id="home-section"
+          class="frame-desktop-responsivewatcheswebsite-frame-desktop-responsivewatcheswebsite"
+        >
+          <div class="frame-desktop-responsivewatcheswebsite-home">
+            <div class="frame-desktop-responsivewatcheswebsite-socialhome">
+              <span
+                class="frame-desktop-responsivewatcheswebsite-text DSmallerFontSize"
+              >
+                <span>Facebook</span>
+              </span>
+              <span
+                class="frame-desktop-responsivewatcheswebsite-text002 DSmallerFontSize"
+              >
+                <span>Twitter</span>
+              </span>
+              <span
+                class="frame-desktop-responsivewatcheswebsite-text004 DSmallerFontSize"
+              >
+                <span>Instagram</span>
+              </span>
+            </div>
+            <div class="frame-desktop-responsivewatcheswebsite-homedata">
+              <span
+                class="frame-desktop-responsivewatcheswebsite-text006 DBiggestFontSize"
+              >
+                <span>
+                  <span>NEW WATCH</span>
+                  <br />
+                  <span id="item-name">COLLECTION B720</span>
+                </span>
+              </span>
+              <span class="frame-desktop-responsivewatcheswebsite-text011">
+                <span>
+                  Latest arrival of the new imported watches of the B720 series,
+                  with a modern and resistant design.
+                </span>
+              </span>
+              <span
+                class="frame-desktop-responsivewatcheswebsite-text013 DH2FontSize"
+              >
+                <span id="item-price">₱3599</span>
+              </span>
+              
+              <div class="frame-desktop-responsivewatcheswebsite-buttonshome">
+                <a href="#featured-section">
+                  <button
+                    class="frame-desktop-responsivewatcheswebsite-buttonhome"
+                  >
+                    <span class="frame-desktop-responsivewatcheswebsite-text015">
+                      <span>Discover</span>
+                    </span>
+                  </button>
+                </a>
+                <span id="item-name">COLLECTION B720</span>
+                <span id="item-price">₱3599</span>
+                <button id="addtocart"
+                  class="frame-desktop-responsivewatcheswebsite-buttonactionhome"
+                  onclick="cartCount()"
+                >
+                  <span class="frame-desktop-responsivewatcheswebsite-text017">
+                    <span>Cart It Now</span>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div class="frame-desktop-responsivewatcheswebsite-homeimg">
+              <img
+                src="public/external/home1041-pb2-500w.png"
+                alt="home1041"
+                class="frame-desktop-responsivewatcheswebsite-home1"
+              />
+            </div>
+          </div>
+          <div class="frame-desktop-responsivewatcheswebsite-header">
+            <div class="frame-desktop-responsivewatcheswebsite-logoheader">
+              <span class="frame-desktop-responsivewatcheswebsite-text027">
+                <span>ROLEX</span>
+              </span>
+              <img
+                src="public/external/bxswatchsvg050-kuu.svg"
+                alt="bxswatchsvg050"
+                class="frame-desktop-responsivewatcheswebsite-bxswatchsvg"
+              />
+            </div>
+            <img
+              src="public/external/bxshoppingbagsvg053-hbsk.svg"
+              alt="bxshoppingbagsvg053"
+              class="frame-desktop-responsivewatcheswebsite-bxshoppingbagsvg"
+            />
+            <img
+              src="public/external/bxsunsvg055-pez.svg"
+              alt="bxsunsvg055"
+              class="frame-desktop-responsivewatcheswebsite-bxsunsvg"
+            />
+          </div>
+          <div id="featured-section" class="frame-desktop-responsivewatcheswebsite-featured">
+            <div class="frame-desktop-responsivewatcheswebsite-title">
+              <span
+                class="frame-desktop-responsivewatcheswebsite-text029 MH2FontSize"
+              >
+                <span>FEATURED</span>
+              </span>
+              <img
+                src="public/external/line1060-9fr.svg"
+                alt="Line1060"
+                class="frame-desktop-responsivewatcheswebsite-line1"
+              />
+            </div>
+            <div class="frame-desktop-responsivewatcheswebsite-cardfeatured2">
+              <img
+                src="public/external/cardcontent062-308a-400w.png"
+                alt="Cardcontent062"
+                class="frame-desktop-responsivewatcheswebsite-cardcontent"
+              />
+              <img
+                src="public/external/featured2063-8yah-300h.png"
+                alt="featured2063"
+                class="frame-desktop-responsivewatcheswebsite-featured2"
+              />
+              <button id="addtocart" class="frame-desktop-responsivewatcheswebsite-buttoncard" onclick="cartCount()">
+                <span class="frame-desktop-responsivewatcheswebsite-text043">
+                  <span>ADD TO CART</span>
+                </span>
+              </button>
+              <div
+                class="frame-desktop-responsivewatcheswebsite-cardtitleyprice"
+              >
+                <span class="frame-desktop-responsivewatcheswebsite-text031">
+                  <span id="item-name">INGERSOLL</span>
+                </span>
+                <span class="frame-desktop-responsivewatcheswebsite-text033">
+                  <span id="item-price">₱250</span>
+                </span>
+              </div>
+              <div class="frame-desktop-responsivewatcheswebsite-sale">
+                <span class="frame-desktop-responsivewatcheswebsite-text035">
+                  <span>SALE</span>
+                </span>
+              </div>
+            </div>
+            <div class="frame-desktop-responsivewatcheswebsite-cardfeatured3">
+              <img
+                src="public/external/cardcontent071-0paw-400w.png"
+                alt="Cardcontent071"
+                class="frame-desktop-responsivewatcheswebsite-cardcontent1"
+              />
+              <img
+                src="public/external/featured3072-ym1b-200w.png"
+                alt="featured3072"
+                class="frame-desktop-responsivewatcheswebsite-featured3"
+              />
+              <button id="addtocart" class="frame-desktop-responsivewatcheswebsite-buttoncard" onclick="cartCount()">
+                <span class="frame-desktop-responsivewatcheswebsite-text043">
+                  <span>ADD TO CART</span>
+                </span>
+              </button>
+              <div
+                class="frame-desktop-responsivewatcheswebsite-cardtitleyprice01"
+              >
+                <span class="frame-desktop-responsivewatcheswebsite-text037">
+                  <span id="item-name">ROSE GOLD</span>
+                </span>
+                <span class="frame-desktop-responsivewatcheswebsite-text039">
+                  <span id="item-price">₱890</span>
+                </span>
+              </div>
+              <div class="frame-desktop-responsivewatcheswebsite-sale1">
+                <span class="frame-desktop-responsivewatcheswebsite-text041">
+                  <span>SALE</span>
+                </span>
+              </div>
+            </div>
+            <div class="frame-desktop-responsivewatcheswebsite-cardfeatured1">
+              <img
+                src="public/external/cardcontent080-doqw-400w.png"
+                alt="Cardcontent080"
+                class="frame-desktop-responsivewatcheswebsite-cardcontent2"
+              />
+              <button id="addtocart" class="frame-desktop-responsivewatcheswebsite-buttoncard" onclick="cartCount()">
+                <span class="frame-desktop-responsivewatcheswebsite-text043">
+                  <span>ADD TO CART</span>
+                </span>
+              </button>
+              <div class="frame-desktop-responsivewatcheswebsite-sale2">
+                <span class="frame-desktop-responsivewatcheswebsite-text045">
+                  <span>SALE</span>
+                </span>
+              </div>
+              <img
+                src="public/external/featured11086-tyq-200w.png"
+                alt="featured11086"
+                class="frame-desktop-responsivewatcheswebsite-featured11"
+              />
+              <div
+                class="frame-desktop-responsivewatcheswebsite-cardtitleyprice02"
+              >
+                <span class="frame-desktop-responsivewatcheswebsite-text047">
+                  <span id="item-name">JAZZMASTER</span>
+                </span>
+                <span class="frame-desktop-responsivewatcheswebsite-text049">
+                  <span id="item-price">₱1050</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="frame-desktop-responsivewatcheswebsite-story">
+            <div class="frame-desktop-responsivewatcheswebsite-imgstory">
+              <img
+                src="public/external/contentimg092-dcvo-500h.png"
+                alt="Contentimg092"
+                class="frame-desktop-responsivewatcheswebsite-contentimg"
+              />
+              <img
+                src="public/external/story1093-5pq-500h.png"
+                alt="story1093"
+                class="frame-desktop-responsivewatcheswebsite-story1"
+              />
+            </div>
+            <div class="frame-desktop-responsivewatcheswebsite-datastory">
+              <span
+                class="frame-desktop-responsivewatcheswebsite-text051 DH1FontSize"
+              >
+                <span>
+                  <span>Inspirational Watch of</span>
+                  <br />
+                  <span>this year</span>
+                </span>
+              </span>
+              <span
+                class="frame-desktop-responsivewatcheswebsite-text056 DNormalFontSize"
+              >
+                <span>
+                  The latest and modern watches of this year, is available in
+                  various presentations in this store, discover them now.
+                </span>
+              </span>
+              <a href="#new-section">
+              <button
+                class="frame-desktop-responsivewatcheswebsite-buttonstory"
+              >
+                <span class="frame-desktop-responsivewatcheswebsite-text058">
+                  <span>Discover</span>
+                </span>
+              </button>
+              </a>
+              <div class="frame-desktop-responsivewatcheswebsite-title1">
+                <span
+                  class="frame-desktop-responsivewatcheswebsite-text060 MH2FontSize"
+                >
+                  <span>OUR STORY</span>
+                </span>
+                <img
+                  src="public/external/line10101-9xf.svg"
+                  alt="Line10101"
+                  class="frame-desktop-responsivewatcheswebsite-line11"
+                />
+              </div>
+            </div>
+          </div>
+          <div id="products-section" class="frame-desktop-responsivewatcheswebsite-products">
+            <div class="frame-desktop-responsivewatcheswebsite-title2">
+              <span
+                class="frame-desktop-responsivewatcheswebsite-text062 MH2FontSize"
+              >
+                <span>PRODUCTS</span>
+              </span>
+              <img
+                src="public/external/line10105-3mg7.svg"
+                alt="Line10105"
+                class="frame-desktop-responsivewatcheswebsite-line12"
+              />
+            </div>
+            <div class="frame-desktop-responsivewatcheswebsite-cardproduct1">
+              <div
+                class="frame-desktop-responsivewatcheswebsite-cardtitleyprice03"
+              >
+                <span class="frame-desktop-responsivewatcheswebsite-text064">
+                  <span id="item-name-icon">SPIRIT ROSE</span>
+                </span>
+                <span class="frame-desktop-responsivewatcheswebsite-text066">
+                  <span id="item-price-icon">₱1500</span>
+                </span>
+              </div>
+              <img
+                src="public/external/product10111-p71i-200w.png"
+                alt="product10111"
+                class="frame-desktop-responsivewatcheswebsite-product1"
+              />
+              <button id="addtocart-icon"
+                class="frame-desktop-responsivewatcheswebsite-buttonproduct"
+              >
+              🛒
+              </button>
+            </div>
+            <div class="frame-desktop-responsivewatcheswebsite-cardproduct2">
+              <img
+                src="public/external/product20117-281q-200w.png"
+                alt="product20117"
+                class="frame-desktop-responsivewatcheswebsite-product2"
+              />
+              <div
+                class="frame-desktop-responsivewatcheswebsite-cardtitleyprice04"
+              >
+                <span class="frame-desktop-responsivewatcheswebsite-text068">
+                  <span id="item-name-icon">KHAKI PILOT</span>
+                </span>
+                <span class="frame-desktop-responsivewatcheswebsite-text070">
+                  <span id="item-price-icon">₱1350</span>
+                </span>
+              </div>
+              <button id="addtocart-icon"
+                class="frame-desktop-responsivewatcheswebsite-buttonproduct"
+              >
+              🛒
+              </button>
+            </div>
+            <div class="frame-desktop-responsivewatcheswebsite-cardproduct3">
+              <div
+                class="frame-desktop-responsivewatcheswebsite-cardtitleyprice05"
+              >
+                <span class="frame-desktop-responsivewatcheswebsite-text072">
+                  <span id="item-name-icon">JUBILEE BLACK</span>
+                </span>
+                <span class="frame-desktop-responsivewatcheswebsite-text074">
+                  <span id="item-price-icon">₱870</span>
+                </span>
+              </div>
+              <img
+                src="public/external/product30129-pnic-200w.png"
+                alt="product30129"
+                class="frame-desktop-responsivewatcheswebsite-product3"
+              />
+              <button id="addtocart-icon"
+                class="frame-desktop-responsivewatcheswebsite-buttonproduct"
+              >
+              🛒
+              </button>
+            </div>
+            <div class="frame-desktop-responsivewatcheswebsite-cardproduct4">
+              <div
+                class="frame-desktop-responsivewatcheswebsite-cardtitleyprice06"
+              >
+                <span class="frame-desktop-responsivewatcheswebsite-text076">
+                  <span id="item-name-icon">FOSIL ME3</span>
+                </span>
+                <span class="frame-desktop-responsivewatcheswebsite-text078">
+                  <span id="item-price-icon">₱650</span>
+                </span>
+              </div>
+              <img
+                src="public/external/product410138-up9-200w.png"
+                alt="product410138"
+                class="frame-desktop-responsivewatcheswebsite-product41"
+              />
+              <button id="addtocart-icon"
+                class="frame-desktop-responsivewatcheswebsite-buttonproduct"
+              >
+              🛒
+              </button>
+            </div>
+            <div class="frame-desktop-responsivewatcheswebsite-cardproduct5">
+              <img
+                src="public/external/product510144-x1e-200w.png"
+                alt="product510144"
+                class="frame-desktop-responsivewatcheswebsite-product51"
+              />
+              <div
+                class="frame-desktop-responsivewatcheswebsite-cardtitleyprice07"
+              >
+                <span class="frame-desktop-responsivewatcheswebsite-text080">
+                  <span id="item-name-icon">DUCHEN</span>
+                </span>
+                <span class="frame-desktop-responsivewatcheswebsite-text082">
+                  <span id="item-price-icon">₱950</span>
+                </span>
+              </div>
+              <button id="addtocart-icon"
+                class="frame-desktop-responsivewatcheswebsite-buttonproduct"
+              >
+              🛒
+              </button>
+            </div>
+          </div>
+          <div class="frame-desktop-responsivewatcheswebsite-testimonial">
+            <div class="frame-desktop-responsivewatcheswebsite-imgtestimonial">
+              <img
+                src="public/external/contentimg0153-23qm-500h.png"
+                alt="Contentimg0153"
+                class="frame-desktop-responsivewatcheswebsite-contentimg1"
+              />
+              <img
+                src="public/external/testimonial0154-0zbm-500h.png"
+                alt="testimonial0154"
+                class="frame-desktop-responsivewatcheswebsite-testimonial1"
+              />
+            </div>
+            <div class="frame-desktop-responsivewatcheswebsite-group2">
+              <div class="frame-desktop-responsivewatcheswebsite-testimonial1">
+                <div class="frame-desktop-responsivewatcheswebsite-group1">
+                  <img
+                    src="public/external/bxsquotealtleftsvg0159-jlg9.svg"
+                    alt="bxsquotealtleftsvg0159"
+                    class="frame-desktop-responsivewatcheswebsite-bxsquotealtleftsvg"
+                  />
+                </div>
+                <span class="frame-desktop-responsivewatcheswebsite-text084">
+                  <span>
+                    They are the best watches that one acquires, also they are
+                    always with the latest news and trends, with a very
+                    comfortable price and especially with the attention you
+                    receive, they are always attentive to your questions.
+                  </span>
+                </span>
+                <span class="frame-desktop-responsivewatcheswebsite-text086">
+                  <span>December 25. 2023</span>
+                </span>
+                <div
+                  class="frame-desktop-responsivewatcheswebsite-perfiltestimonial"
+                >
+                  <img
+                    src="public/external/charles.png"
+                    alt="testimonial110164"
+                    class="frame-desktop-responsivewatcheswebsite-testimonial11"
+                  />
+                  <div
+                    class="frame-desktop-responsivewatcheswebsite-datetestimonial"
+                  >
+                    <span
+                      class="frame-desktop-responsivewatcheswebsite-text088 MH3FontSize"
+                    >
+                      <span>Charles Pajares</span>
+                    </span>
+                    <span
+                      class="frame-desktop-responsivewatcheswebsite-text090 MSmallFontSize"
+                    >
+                      <span>Director of a company</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="frame-desktop-responsivewatcheswebsite-arrowstestimonial"
+              >
+                <div
+                  class="frame-desktop-responsivewatcheswebsite-arrowlefttestimonial"
+                >
+                  <img
+                    src="public/external/bxleftarrowaltsvg0171-irwi.svg"
+                    alt="bxleftarrowaltsvg0171"
+                    class="frame-desktop-responsivewatcheswebsite-bxleftarrowaltsvg"
+                  />
+                </div>
+                <div
+                  class="frame-desktop-responsivewatcheswebsite-arrowrighttestimonial"
+                >
+                  <img
+                    src="public/external/bxrightarrowaltsvg0175-u2v8.svg"
+                    alt="bxrightarrowaltsvg0175"
+                    class="frame-desktop-responsivewatcheswebsite-bxrightarrowaltsvg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="new-section" class="frame-desktop-responsivewatcheswebsite-new">
+            <div class="frame-desktop-responsivewatcheswebsite-title3">
+              <span
+                class="frame-desktop-responsivewatcheswebsite-text092 MH2FontSize"
+              >
+                <span>NEW ARRIVALS</span>
+              </span>
+              <img
+                src="public/external/line10180-egs8.svg"
+                alt="Line10180"
+                class="frame-desktop-responsivewatcheswebsite-line13"
+              />
+            </div>
+            <div class="frame-desktop-responsivewatcheswebsite-cardnew1">
+              <div class="frame-desktop-responsivewatcheswebsite-newtag">
+                <span class="frame-desktop-responsivewatcheswebsite-text094">
+                  <span>NEW</span>
+                </span>
+              </div>
+              <img
+                src="public/external/new10186-ptji-200w.png"
+                alt="new10186"
+                class="frame-desktop-responsivewatcheswebsite-new1"
+              />
+              <div
+                class="frame-desktop-responsivewatcheswebsite-cardtitleyprice08"
+              >
+                <span class="frame-desktop-responsivewatcheswebsite-text096">
+                  <span>LONGINES ROSE</span>
+                </span>
+                <!-- <span class="frame-desktop-responsivewatcheswebsite-text098">
+                  <span>₱980</span>
+                </span> -->
+              </div>
+            </div>
+            <div class="frame-desktop-responsivewatcheswebsite-cardnew2">
+              <img
+                src="public/external/cardcontent0191-q3c8-300w.png"
+                alt="Cardcontent0191"
+                class="frame-desktop-responsivewatcheswebsite-cardcontent3"
+              />
+              <!-- <button
+                class="frame-desktop-responsivewatcheswebsite-buttoncard1"
+              >
+                <span class="frame-desktop-responsivewatcheswebsite-text100">
+                  <span>ADD TO CART</span>
+                </span>
+              </button> -->
+              <img
+                src="public/external/new20194-2u9r-200w.png"
+                alt="new20194"
+                class="frame-desktop-responsivewatcheswebsite-new2"
+              />
+              <div
+                class="frame-desktop-responsivewatcheswebsite-cardtitleyprice09"
+              >
+                <span class="frame-desktop-responsivewatcheswebsite-text102">
+                  <span>JAZZMASTER</span>
+                </span>
+                <!-- <span class="frame-desktop-responsivewatcheswebsite-text104">
+                  <span>₱1150</span>
+                </span> -->
+              </div>
+              <div class="frame-desktop-responsivewatcheswebsite-newtag1">
+                <span class="frame-desktop-responsivewatcheswebsite-text106">
+                  <span>NEW</span>
+                </span>
+              </div>
+            </div>
+            <div class="frame-desktop-responsivewatcheswebsite-cardnew3">
+              <div class="frame-desktop-responsivewatcheswebsite-newtag2">
+                <span class="frame-desktop-responsivewatcheswebsite-text108">
+                  <span>NEW</span>
+                </span>
+              </div>
+              <img
+                src="public/external/new30206-hujq-200w.png"
+                alt="new30206"
+                class="frame-desktop-responsivewatcheswebsite-new3"
+              />
+              <div
+                class="frame-desktop-responsivewatcheswebsite-cardtitleyprice10"
+              >
+                <span class="frame-desktop-responsivewatcheswebsite-text110">
+                  <span>DREYFUSS GOLD</span>
+                </span>
+                <!-- <span class="frame-desktop-responsivewatcheswebsite-text112">
+                  <span>₱750</span>
+                </span> -->
+              </div>
+            </div>
+            <div class="frame-desktop-responsivewatcheswebsite-cardnew4">
+              <div class="frame-desktop-responsivewatcheswebsite-newtag3">
+                <span class="frame-desktop-responsivewatcheswebsite-text114">
+                  <span>NEW</span>
+                </span>
+              </div>
+              <img
+                src="public/external/new40215-nmc-200w.png"
+                alt="new40215"
+                class="frame-desktop-responsivewatcheswebsite-new4"
+              />
+              <div
+                class="frame-desktop-responsivewatcheswebsite-cardtitleyprice11"
+              >
+                <span class="frame-desktop-responsivewatcheswebsite-text116">
+                  <span>PORTUGUESE ROSE</span>
+                </span>
+                <!-- <span class="frame-desktop-responsivewatcheswebsite-text118">
+                  <span>₱1590</span>
+                </span> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="frame-desktop-responsivewatcheswebsite-newsletter">
+            <div class="frame-desktop-responsivewatcheswebsite-group3">
+              <span
+                class="frame-desktop-responsivewatcheswebsite-text120 DH1FontSize"
+              >
+                <span>
+                  <span>Subscribe Our</span>
+                  <br />
+                  <span>Newsletter</span>
+                </span>
+              </span>
+              <span class="frame-desktop-responsivewatcheswebsite-text125">
+                <span>
+                  Don't miss out on your discounts. Subscribe to our email
+                  newsletter to get the best offers, discounts, coupons, gifts
+                  and much more.
+                </span>
+              </span>
+              <div
+                class="frame-desktop-responsivewatcheswebsite-inputnewsletter"
+              >
+                <button
+                  class="frame-desktop-responsivewatcheswebsite-buttonnewsletter"
+                >
+                  <span class="frame-desktop-responsivewatcheswebsite-text127">
+                    <span>SUBSCRIBE</span>
+                  </span>
+                </button>
+                <div
+                  class="frame-desktop-responsivewatcheswebsite-inputnewsletter1"
+                >
+                  <span class="frame-desktop-responsivewatcheswebsite-text129">
+                    <span>Enter your email</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-section" id="checkout-section">
+            <div class="frame-desktop-responsivewatcheswebsite-title3">
+              <span
+                class="frame-desktop-responsivewatcheswebsite-text092 MH2FontSize"
+              >
+                <span>Watch Luggage</span>
+              </span>
+              <img
+                src="public/external/line10180-egs8.svg"
+                alt="Line10180"
+                class="frame-desktop-responsivewatcheswebsite-line13"
+              />
+            </div>
+            <div class="cart">
+              <ul class="cart-items">
+                <!-- JavaScript will work here -->
+              </ul>
+              <button class="checkout" onclick="checkoutForm()"><span class="frame-desktop-responsivewatcheswebsite-text100">CHECKOUT</span></button>
+              <h1>Worth: <span class="total">₱0.00</span></h1>
+            </div>
+          </div>
+          
+          <div class="frame-desktop-responsivewatcheswebsite-footer">
+            <div class="frame-desktop-responsivewatcheswebsite-contentfooter1">
+              <span
+                class="frame-desktop-responsivewatcheswebsite-text131 DH3FontSize"
+              >
+                <span>Our information</span>
+              </span>
+              <span
+                class="frame-desktop-responsivewatcheswebsite-text133 DNormalFontSize"
+              >
+                <span>1234 - Peru</span>
+              </span>
+              <span
+                class="frame-desktop-responsivewatcheswebsite-text135 DNormalFontSize"
+              >
+                <span>La Libertad 43210</span>
+              </span>
+              <span
+                class="frame-desktop-responsivewatcheswebsite-text137 DNormalFontSize"
+              >
+                <span>123-456-789</span>
+              </span>
+            </div>
+            <div class="frame-desktop-responsivewatcheswebsite-contentfooter3">
+              <span
+                class="frame-desktop-responsivewatcheswebsite-text139 DH3FontSize"
+              >
+                <span>Product</span>
+              </span>
+              <span
+                class="frame-desktop-responsivewatcheswebsite-text141 DNormalFontSize"
+              >
+                <span>Road bikes</span>
+              </span>
+              <span
+                class="frame-desktop-responsivewatcheswebsite-text143 DNormalFontSize"
+              >
+                <span>Mountain bikes</span>
+              </span>
+              <span
+                class="frame-desktop-responsivewatcheswebsite-text145 DNormalFontSize"
+              >
+                <span>Electric</span>
+              </span>
+              <span
+                class="frame-desktop-responsivewatcheswebsite-text147 DNormalFontSize"
+              >
+                <span>Accesories</span>
+              </span>
+            </div>
+            <div class="frame-desktop-responsivewatcheswebsite-contentfooter2">
+              <span
+                class="frame-desktop-responsivewatcheswebsite-text149 DH3FontSize"
+              >
+                <span>About Us</span>
+              </span>
+              <span
+                class="frame-desktop-responsivewatcheswebsite-text151 DNormalFontSize"
+              >
+                <span>Support Center</span>
+              </span>
+              <span
+                class="frame-desktop-responsivewatcheswebsite-text153 DNormalFontSize"
+              >
+                <span>Customer Support</span>
+              </span>
+              <span
+                class="frame-desktop-responsivewatcheswebsite-text155 DNormalFontSize"
+              >
+                <span>About Us</span>
+              </span>
+              <span
+                class="frame-desktop-responsivewatcheswebsite-text157 DNormalFontSize"
+              >
+                <span>Copy Right</span>
+              </span>
+            </div>
+            <div class="frame-desktop-responsivewatcheswebsite-contentfooter4">
+              <span
+                class="frame-desktop-responsivewatcheswebsite-text159 DH3FontSize"
+              >
+                <span>Social</span>
+              </span>
+              <div class="frame-desktop-responsivewatcheswebsite-footersocial">
+                <img
+                  src="public/external/bxlfacebooksvg0251-ad9.svg"
+                  alt="bxlfacebooksvg0251"
+                  class="frame-desktop-responsivewatcheswebsite-bxlfacebooksvg"
+                />
+                <img
+                  src="public/external/bxltwittersvg0253-8q8z.svg"
+                  alt="bxltwittersvg0253"
+                  class="frame-desktop-responsivewatcheswebsite-bxltwittersvg"
+                />
+                <img
+                  src="public/external/bxlinstagramsvg0255-51oa.svg"
+                  alt="bxlinstagramsvg0255"
+                  class="frame-desktop-responsivewatcheswebsite-bxlinstagramsvg"
+                />
+              </div>
+            </div>
+            <img
+              src="public/external/linefooter0259-0asw.svg"
+              alt="Linefooter0259"
+              class="frame-desktop-responsivewatcheswebsite-linefooter"
+            />
+
+            <div class="frame-desktop-responsivewatcheswebsite-copyfooter">
+              <img
+                src="public/external/bxcopyrightsvg0261-p1k.svg"
+                alt="bxcopyrightsvg0261"
+                class="frame-desktop-responsivewatcheswebsite-bxcopyrightsvg"
+              />
+              <span
+                class="frame-desktop-responsivewatcheswebsite-text161 DSmallerFontSize"
+              >
+                <span>All rigths reserved 2023</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

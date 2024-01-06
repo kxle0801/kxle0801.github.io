@@ -1,0 +1,2462 @@
+
+:root {
+  --dl-color-gray-500: #595959;
+  --dl-color-gray-700: #999999;
+  --dl-color-gray-900: #D9D9D9;
+  --dl-size-size-large: 144px;
+  --dl-size-size-small: 48px;
+  --dl-color-danger-300: #A22020;
+  --dl-color-danger-500: #BF2626;
+  --dl-color-danger-700: #E14747;
+  --dl-color-gray-black: #000000;
+  --dl-color-gray-white: #FFFFFF;
+  --dl-size-size-medium: 96px;
+  --dl-size-size-xlarge: 192px;
+  --dl-size-size-xsmall: 16px;
+  --dl-space-space-unit: 16px;
+  --dl-color-primary-100: #003EB3;
+  --dl-color-primary-300: #0074F0;
+  --dl-color-primary-500: #14A9FF;
+  --dl-color-primary-700: #85DCFF;
+  --dl-color-success-300: #199033;
+  --dl-color-success-500: #32A94C;
+  --dl-color-success-700: #4CC366;
+  --dl-size-size-xxlarge: 288px;
+  --dl-size-size-maxwidth: 1400px;
+  --dl-radius-radius-round: 50%;
+  --dl-space-space-halfunit: 8px;
+  --dl-space-space-sixunits: 96px;
+  --dl-space-space-twounits: 32px;
+  --dl-radius-radius-radius2: 2px;
+  --dl-radius-radius-radius4: 4px;
+  --dl-radius-radius-radius8: 8px;
+  --dl-space-space-fiveunits: 80px;
+  --dl-space-space-fourunits: 64px;
+  --dl-space-space-threeunits: 48px;
+  --dl-color-default-textcolor: rgba(89, 89, 89, 1);
+  --dl-color-default-firstcolor: rgba(255, 181, 104, 1);
+  --dl-color-default-titlecolor: rgba(45, 45, 45, 1);
+  --dl-color-default-bordercolor: rgba(239, 239, 239, 1);
+  --dl-color-default-bodycolordark: rgba(30, 30, 30, 1);
+  --dl-color-default-textcolordark: rgba(191, 191, 191, 1);
+  --dl-space-space-oneandhalfunits: 24px;
+  --dl-color-default-firstcolordark: rgba(239, 190, 138, 1);
+  --dl-color-default-textcolorlight: rgba(140, 140, 140, 1);
+  --dl-color-default-titlecolordark: rgba(242, 242, 242, 1);
+  --dl-color-default-containercolordark: rgba(40, 40, 40, 1);
+  --dl-color-default-firstcoloractiondark: #3d3d3d;
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  /* 
+      Change favorite color
+      Default: hsl(162, 100%, 40%)
+      Orange: hsl(14, 100%, 65%) - Blue: hsl(210, 100%, 70%)
+      Pink: hsl(356, 100%, 75%) - Purple: hsl(250, 100%, 75%)
+
+      For more colors visit: https://colors.dopely.top/color-pedia
+      -> Choose any color 
+      -> click on tab (Color Conversion)
+      -> Copy the color mode (HSL)
+  */
+
+  --hue: 8;
+  --first-color: hsl(var(--hue), 100%, 55%);
+  --first-color-alt: hsl(var(--hue), 56%, 35%);
+  --title-color: hsl(228, 8%, 95%);
+  --text-color: hsl(228, 8%, 65%);
+  --body-color: hsl(228, 15%, 20%);
+  --container-color: hsl(228, 15%, 15%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Poppins", sans-serif;
+  --biggest-font-size: 2rem;
+  --bigger-font-size: 1.25rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+
+.frame-desktop-responsivewatcheswebsite-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.frame-desktop-responsivewatcheswebsite-frame-desktop-responsivewatcheswebsite {
+  width: 100%;
+  height: 5070px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+.frame-desktop-responsivewatcheswebsite-home {
+  top: 0px;
+  left: 0px;
+  width: 1280px;
+  height: 712px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: var(--dl-color-default-bodycolordark);
+}
+.frame-desktop-responsivewatcheswebsite-socialhome {
+  top: 249px;
+  left: 128px;
+  width: 15.000007629394531px;
+  height: 221px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-text {
+  top: 221px;
+  color: var(--dl-color-default-textcolorlight);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: normal;
+}
+.frame-desktop-responsivewatcheswebsite-text002 {
+  top: 132px;
+  color: var(--dl-color-default-textcolorlight);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: normal;
+}
+.frame-desktop-responsivewatcheswebsite-text004 {
+  top: 59px;
+  left: 0.00000489567537442781px;
+  color: var(--dl-color-default-textcolorlight);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: normal;
+}
+.frame-desktop-responsivewatcheswebsite-homedata {
+  top: 194px;
+  left: 216px;
+  width: 367px;
+  height: 331px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-text006 {
+  color: var(--dl-color-default-titlecolordark);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: 139.9999976158142%;
+}
+.frame-desktop-responsivewatcheswebsite-text011 {
+  top: 128px;
+  color: var(--dl-color-default-textcolordark);
+  width: 367px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 139.9999976158142%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-text013 {
+  top: 196px;
+  color: var(--dl-color-default-firstcolordark);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: normal;
+}
+.frame-desktop-responsivewatcheswebsite-buttonshome {
+  top: 272px;
+  left: 0px;
+  width: 272px;
+  height: 59px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-buttonhome {
+  gap: 10px;
+  top: 4px;
+  left: 0px;
+  display: flex;
+  padding: 16px 24px;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+  cursor: pointer;
+  background-color: rgba(191, 191, 191, 1);
+  transition: transform ease 0.5s;
+}
+
+.frame-desktop-responsivewatcheswebsite-buttonhome:hover {
+  transform: scale(1.1);
+}
+
+.frame-desktop-responsivewatcheswebsite-buttonactionhome {
+  cursor: pointer;
+  transition: transform ease 0.5s;
+}
+
+.frame-desktop-responsivewatcheswebsite-buttonactionhome:hover {
+  transform: scale(1.1);
+}
+
+.frame-desktop-responsivewatcheswebsite-home1 {
+  transition: transform ease 1s;
+}
+
+.frame-desktop-responsivewatcheswebsite-home1:hover {
+  transform: scale(1.1);
+}
+
+.frame-desktop-responsivewatcheswebsite-text015 {
+  color: var(--dl-color-default-textcolor);
+  height: auto;
+  font-size: 16px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.frame-desktop-responsivewatcheswebsite-buttonactionhome {
+  gap: 10px;
+  top: 0px;
+  left: 107px;
+  display: flex;
+  padding: 20px 32px;
+  overflow: hidden;
+  position: absolute;
+  box-shadow: 0px 12px 24px 0px rgba(25, 25, 25, 0.20000000298023224) ;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: var(--dl-color-default-firstcoloractiondark);
+}
+.frame-desktop-responsivewatcheswebsite-text017 {
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  font-size: 16px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-homeimg {
+  top: 0px;
+  left: 672px;
+  width: 480px;
+  height: 680px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(239, 190, 138, 1);
+}
+.frame-desktop-responsivewatcheswebsite-home1 {
+  top: 96px;
+  left: 30px;
+  width: 420px;
+  height: 560px;
+  position: absolute;
+}
+.frame-desktop-responsivewatcheswebsite-header {
+  top: 0px;
+  left: 0px;
+  width: 1280px;
+  height: 72px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.frame-desktop-responsivewatcheswebsite-navmenu {
+  top: 27px;
+  left: 266px;
+  width: 312px;
+  height: 18px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-text019 {
+  color: var(--dl-color-default-firstcolor);
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.frame-desktop-responsivewatcheswebsite-navmenu a:hover {
+  color: var(--dl-color-default-firstcolor);
+}
+
+.frame-desktop-responsivewatcheswebsite-text021 {
+  left: 81px;
+  color: var(--dl-color-default-titlecolordark);
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-text023 {
+  left: 181px;
+  color: var(--dl-color-default-titlecolordark);
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-text025 {
+  left: 282px;
+  color: var(--dl-color-default-titlecolordark);
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-logoheader {
+  top: 26px;
+  left: 128px;
+  width: 76px;
+  height: 20px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-text027 {
+  left: 24px;
+  color: var(--dl-color-default-titlecolordark);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-bxswatchsvg {
+  top: 0px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+.frame-desktop-responsivewatcheswebsite-bxshoppingbagsvg {
+  top: 26px;
+  left: 1108px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+.frame-desktop-responsivewatcheswebsite-bxsunsvg {
+  top: 26px;
+  left: 1072px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+.frame-desktop-responsivewatcheswebsite-featured {
+  top: 712px;
+  left: 0px;
+  width: 1280px;
+  height: 664px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: var(--dl-color-default-bodycolordark);
+}
+.frame-desktop-responsivewatcheswebsite-title {
+  top: 72px;
+  left: 589px;
+  width: 103px;
+  height: 39px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-text029 {
+  top: 16px;
+  color: var(--dl-color-default-titlecolordark);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: normal;
+}
+.frame-desktop-responsivewatcheswebsite-line1 {
+  top: 0px;
+  left: 18px;
+  width: 67px;
+  height: 1px;
+  position: absolute;
+}
+.frame-desktop-responsivewatcheswebsite-cardfeatured2 {
+  top: 175px;
+  left: 485px;
+  width: 312px;
+  height: 374px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  transition: all ease-in-out 0.5s;
+}
+
+.frame-desktop-responsivewatcheswebsite-cardfeatured2:hover {
+  transform: scale(1.05);
+}
+
+.frame-desktop-responsivewatcheswebsite-cardcontent {
+  top: 0px;
+  left: 0.0000029723744319198886px;
+  width: 312px;
+  height: 441px;
+  position: absolute;
+  border-color: rgba(51, 51, 51, 1);
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+}
+
+.frame-desktop-responsivewatcheswebsite-featured2 {
+  top: 40px;
+  left: 86px;
+  width: 140px;
+  height: 208px;
+  position: absolute;
+}
+.frame-desktop-responsivewatcheswebsite-cardtitleyprice {
+  top: 276px;
+  left: 111px;
+  width: 90px;
+  height: 50px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-text031 {
+  color: var(--dl-color-default-titlecolordark);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-text033 {
+  top: 31px;
+  left: 25px;
+  color: var(--dl-color-default-firstcolordark);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-sale {
+  top: 92px;
+  left: 0px;
+  width: 66px;
+  height: 32.000003814697266px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(239, 190, 138, 1);
+}
+.frame-desktop-responsivewatcheswebsite-text035 {
+  top: -16.000000349691106px;
+  left: 7.999999300617787px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-cardfeatured3 {
+  top: 175px;
+  left: 821px;
+  width: 312px;
+  height: 374px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+}
+
+.frame-desktop-responsivewatcheswebsite-cardfeatured3:hover {
+  transform: scale(1.05);
+}
+
+.frame-desktop-responsivewatcheswebsite-cardcontent1 {
+  top: 0px;
+  left: 0.0000029723744319198886px;
+  width: 312px;
+  height: 441px;
+  position: absolute;
+  border-color: #333333;
+  border-style: solid;
+  border-width: 1px;
+}
+.frame-desktop-responsivewatcheswebsite-featured3 {
+  top: 40px;
+  left: 86px;
+  width: 140px;
+  height: 214px;
+  position: absolute;
+}
+.frame-desktop-responsivewatcheswebsite-cardtitleyprice01 {
+  top: 276px;
+  left: 110px;
+  width: 91px;
+  height: 50px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-text037 {
+  color: var(--dl-color-default-titlecolordark);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-text039 {
+  top: 31px;
+  left: 26px;
+  color: var(--dl-color-default-firstcolordark);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-sale1 {
+  top: 92px;
+  left: 0px;
+  width: 66px;
+  height: 32.000003814697266px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(239, 190, 138, 1);
+}
+.frame-desktop-responsivewatcheswebsite-text041 {
+  top: -16.000000349691106px;
+  left: 7.999999300617787px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-cardfeatured1 {
+  top: 175px;
+  left: 149px;
+  width: 312px;
+  height: 441px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+}
+
+.frame-desktop-responsivewatcheswebsite-cardfeatured1:hover {
+  transform: scale(1.05);
+}
+
+.frame-desktop-responsivewatcheswebsite-cardcontent2 {
+  top: 0px;
+  left: 0.0000029723744319198886px;
+  width: 312px;
+  height: 441px;
+  position: absolute;
+  border-color: rgba(51, 51, 51, 1);
+  border-style: solid;
+  border-width: 1px;
+}
+.frame-desktop-responsivewatcheswebsite-buttoncard {
+  gap: 10px;
+  top: 337px;
+  left: 80px;
+  display: flex;
+  padding: 20px 32px;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+  cursor: pointer;
+  background-color: var(--dl-color-default-firstcoloractiondark);
+  transition: all ease-in-out 0.5s;
+}
+
+.frame-desktop-responsivewatcheswebsite-buttoncard:hover {
+  transform: scale(1.05);
+}
+
+.frame-desktop-responsivewatcheswebsite-text043 {
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  font-size: 14px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-sale2 {
+  top: 92px;
+  left: 0.0000029723744319198886px;
+  width: 66px;
+  height: 32.000003814697266px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(239, 190, 138, 1);
+}
+.frame-desktop-responsivewatcheswebsite-text045 {
+  top: -16.000000349691106px;
+  left: 7.999999300617787px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-featured11 {
+  top: 32px;
+  left: 86px;
+  width: 140px;
+  height: 215px;
+  position: absolute;
+}
+.frame-desktop-responsivewatcheswebsite-cardtitleyprice02 {
+  top: 263px;
+  left: 101px;
+  width: 109px;
+  height: 50px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-text047 {
+  color: var(--dl-color-default-titlecolordark);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-text049 {
+  top: 31px;
+  left: 30px;
+  color: var(--dl-color-default-firstcolordark);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-story {
+  top: 1376px;
+  left: 0px;
+  width: 1280px;
+  height: 682px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: var(--dl-color-default-bodycolordark);
+}
+.frame-desktop-responsivewatcheswebsite-imgstory {
+  top: 88px;
+  left: 128px;
+  width: 546px;
+  height: 546px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-contentimg {
+  top: 96px;
+  left: 0px;
+  width: 450px;
+  height: 450px;
+  position: absolute;
+}
+.frame-desktop-responsivewatcheswebsite-story1 {
+  top: 0px;
+  left: 96px;
+  width: 450px;
+  height: 450px;
+  position: absolute;
+}
+.frame-desktop-responsivewatcheswebsite-datastory {
+  top: 213px;
+  left: 770px;
+  width: 382px;
+  height: 335px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-text051 {
+  top: 79px;
+  color: var(--dl-color-default-titlecolordark);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: normal;
+}
+.frame-desktop-responsivewatcheswebsite-text056 {
+  top: 187px;
+  color: var(--dl-color-default-textcolordark);
+  width: 382px;
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: normal;
+}
+.frame-desktop-responsivewatcheswebsite-buttonstory {
+  gap: 10px;
+  top: 284px;
+  left: 0px;
+  display: flex;
+  padding: 16px 24px;
+  overflow: hidden;
+  position: absolute;
+  box-shadow: 0px 12px 24px 0px rgba(25, 25, 25, 0.20000000298023224) ;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: var(--dl-color-default-firstcoloractiondark);
+  transition: all ease-in-out 0.5s;
+  cursor: pointer;
+}
+
+.frame-desktop-responsivewatcheswebsite-buttonstory:hover {
+  transform: scale(1.05);
+}
+
+.frame-desktop-responsivewatcheswebsite-text058 {
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  font-size: 16px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-title1 {
+  top: 0px;
+  left: 0px;
+  width: 113px;
+  height: 39px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-text060 {
+  top: 16px;
+  color: var(--dl-color-default-titlecolordark);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: normal;
+}
+.frame-desktop-responsivewatcheswebsite-line11 {
+  top: 0px;
+  left: 0px;
+  width: 67px;
+  height: 1px;
+  position: absolute;
+}
+.frame-desktop-responsivewatcheswebsite-products {
+  top: 2058px;
+  left: 0px;
+  width: 1280px;
+  height: 811px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: var(--dl-color-default-bodycolordark);
+}
+.frame-desktop-responsivewatcheswebsite-title2 {
+  top: 72px;
+  left: 586px;
+  width: 108px;
+  height: 39px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-text062 {
+  top: 16px;
+  color: var(--dl-color-default-titlecolordark);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: normal;
+}
+.frame-desktop-responsivewatcheswebsite-line12 {
+  top: 0px;
+  left: 21px;
+  width: 67px;
+  height: 1px;
+  position: absolute;
+}
+.frame-desktop-responsivewatcheswebsite-cardproduct1 {
+  top: 175px;
+  left: 300px;
+  width: 200px;
+  height: 274px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(40, 40, 40, 1);
+}
+.frame-desktop-responsivewatcheswebsite-cardtitleyprice03 {
+  top: 202px;
+  left: 60px;
+  width: 81px;
+  height: 40px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-text064 {
+  color: var(--dl-color-default-titlecolordark);
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-text066 {
+  top: 24px;
+  left: 21px;
+  color: var(--dl-color-default-firstcolordark);
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-product1 {
+  top: 32px;
+  left: 53px;
+  width: 95px;
+  height: 154px;
+  position: absolute;
+}
+.frame-desktop-responsivewatcheswebsite-buttonproduct {
+  gap: 10px;
+  top: 241px;
+  left: 167px;
+  display: flex;
+  padding: 8px;
+  overflow: hidden;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.frame-desktop-responsivewatcheswebsite-bxshoppingbagsvg1 {
+  width: 16px;
+  height: 16px;
+}
+.frame-desktop-responsivewatcheswebsite-cardproduct2 {
+  top: 175px;
+  left: 540px;
+  width: 200px;
+  height: 274px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(40, 40, 40, 1);
+}
+.frame-desktop-responsivewatcheswebsite-product2 {
+  top: 32px;
+  left: 55px;
+  width: 90px;
+  height: 154px;
+  position: absolute;
+}
+.frame-desktop-responsivewatcheswebsite-cardtitleyprice04 {
+  top: 203px;
+  left: 59px;
+  width: 83px;
+  height: 39px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-text068 {
+  color: var(--dl-color-default-titlecolordark);
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-text070 {
+  top: 23px;
+  left: 22px;
+  color: var(--dl-color-default-firstcolordark);
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-buttonproduct1 {
+  gap: 10px;
+  top: 241px;
+  left: 167px;
+  display: flex;
+  padding: 8px;
+  overflow: hidden;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dl-color-default-firstcoloractiondark);
+}
+.frame-desktop-responsivewatcheswebsite-bxshoppingbagsvg2 {
+  width: 16px;
+  height: 16px;
+}
+.frame-desktop-responsivewatcheswebsite-cardproduct3 {
+  top: 175px;
+  left: 780px;
+  width: 200px;
+  height: 274px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(40, 40, 40, 1);
+}
+.frame-desktop-responsivewatcheswebsite-cardtitleyprice05 {
+  top: 203px;
+  left: 50px;
+  width: 101px;
+  height: 39px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-text072 {
+  color: var(--dl-color-default-titlecolordark);
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-text074 {
+  top: 23px;
+  left: 30px;
+  color: var(--dl-color-default-firstcolordark);
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-product3 {
+  top: 32px;
+  left: 55px;
+  width: 91px;
+  height: 154px;
+  position: absolute;
+}
+.frame-desktop-responsivewatcheswebsite-buttonproduct2 {
+  gap: 10px;
+  top: 241px;
+  left: 167px;
+  display: flex;
+  padding: 8px;
+  overflow: hidden;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dl-color-default-firstcoloractiondark);
+}
+.frame-desktop-responsivewatcheswebsite-bxshoppingbagsvg3 {
+  width: 16px;
+  height: 16px;
+}
+.frame-desktop-responsivewatcheswebsite-cardproduct4 {
+  top: 489px;
+  left: 300px;
+  width: 200px;
+  height: 274px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(40, 40, 40, 1);
+}
+.frame-desktop-responsivewatcheswebsite-cardtitleyprice06 {
+  top: 203px;
+  left: 66px;
+  width: 69px;
+  height: 39px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-text076 {
+  color: var(--dl-color-default-titlecolordark);
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-text078 {
+  top: 23px;
+  left: 15px;
+  color: var(--dl-color-default-firstcolordark);
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-product41 {
+  top: 32px;
+  left: 53px;
+  width: 94px;
+  height: 154px;
+  position: absolute;
+}
+.frame-desktop-responsivewatcheswebsite-buttonproduct3 {
+  gap: 10px;
+  top: 241px;
+  left: 167px;
+  display: flex;
+  padding: 8px;
+  overflow: hidden;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dl-color-default-firstcoloractiondark);
+}
+.frame-desktop-responsivewatcheswebsite-bxshoppingbagsvg4 {
+  width: 16px;
+  height: 16px;
+}
+.frame-desktop-responsivewatcheswebsite-cardproduct5 {
+  top: 489px;
+  left: 540px;
+  width: 200px;
+  height: 274px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(40, 40, 40, 1);
+}
+.frame-desktop-responsivewatcheswebsite-product51 {
+  top: 32px;
+  left: 54px;
+  width: 91px;
+  height: 154px;
+  position: absolute;
+}
+.frame-desktop-responsivewatcheswebsite-cardtitleyprice07 {
+  top: 203px;
+  left: 72px;
+  width: 56px;
+  height: 39px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-text080 {
+  color: var(--dl-color-default-titlecolordark);
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-text082 {
+  top: 23px;
+  left: 9px;
+  color: var(--dl-color-default-firstcolordark);
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-buttonproduct4 {
+  gap: 10px;
+  top: 241px;
+  left: 167px;
+  display: flex;
+  padding: 8px;
+  overflow: hidden;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dl-color-default-firstcoloractiondark);
+}
+.frame-desktop-responsivewatcheswebsite-bxshoppingbagsvg5 {
+  width: 16px;
+  height: 16px;
+}
+.frame-desktop-responsivewatcheswebsite-testimonial {
+  top: 2869px;
+  left: 0px;
+  width: 1280px;
+  height: 682px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: var(--dl-color-default-bodycolordark);
+}
+.frame-desktop-responsivewatcheswebsite-imgtestimonial {
+  top: 88px;
+  left: 706px;
+  width: 546px;
+  height: 546px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-contentimg1 {
+  top: 0px;
+  left: 96px;
+  width: 450px;
+  height: 450px;
+  position: absolute;
+}
+.frame-desktop-responsivewatcheswebsite-testimonial1 {
+  top: 96px;
+  left: 0px;
+  width: 450px;
+  height: 450px;
+  position: absolute;
+}
+.frame-desktop-responsivewatcheswebsite-group2 {
+  top: 143px;
+  left: 272px;
+  width: 338px;
+  height: 397px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-testimonial1 {
+  top: 0px;
+  left: 0px;
+  width: 338px;
+  height: 309px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-group1 {
+  top: 0px;
+  left: 0px;
+  width: 48px;
+  height: 40px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(40, 40, 40, 1);
+}
+.frame-desktop-responsivewatcheswebsite-bxsquotealtleftsvg {
+  top: 8px;
+  left: 12px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.frame-desktop-responsivewatcheswebsite-text084 {
+  top: 72px;
+  color: var(--dl-color-default-textcolordark);
+  width: 338px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 139.9999976158142%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-text086 {
+  top: 198px;
+  color: var(--dl-color-default-titlecolordark);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-perfiltestimonial {
+  top: 249px;
+  left: 0px;
+  width: 204px;
+  height: 60px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-testimonial11 {
+  top: 0px;
+  left: 0px;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  border-radius: 64px;
+}
+.frame-desktop-responsivewatcheswebsite-datetestimonial {
+  top: 9px;
+  left: 76px;
+  width: 128px;
+  height: 42px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-text088 {
+  color: var(--dl-color-default-titlecolordark);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: normal;
+}
+.frame-desktop-responsivewatcheswebsite-text090 {
+  top: 27px;
+  color: var(--dl-color-default-textcolordark);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: normal;
+}
+.frame-desktop-responsivewatcheswebsite-arrowstestimonial {
+  top: 365px;
+  left: 0px;
+  width: 88px;
+  height: 32px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-arrowlefttestimonial {
+  top: 0px;
+  left: 0px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(40, 40, 40, 1);
+}
+.frame-desktop-responsivewatcheswebsite-bxleftarrowaltsvg {
+  top: 4px;
+  left: 4px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.frame-desktop-responsivewatcheswebsite-arrowrighttestimonial {
+  top: 0px;
+  left: 56px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(40, 40, 40, 1);
+}
+.frame-desktop-responsivewatcheswebsite-bxrightarrowaltsvg {
+  top: 4px;
+  left: 4px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.frame-desktop-responsivewatcheswebsite-new {
+  top: 3551px;
+  left: 0px;
+  width: 1280px;
+  height: 678px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: var(--dl-color-default-bodycolordark);
+}
+.frame-desktop-responsivewatcheswebsite-title3 {
+  top: 72px;
+  left: 565px;
+  width: 150px;
+  height: 39px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-text092 {
+  top: 16px;
+  color: var(--dl-color-default-titlecolordark);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: normal;
+}
+.frame-desktop-responsivewatcheswebsite-line13 {
+  top: 0px;
+  left: 42px;
+  width: 67px;
+  height: 1px;
+  position: absolute;
+}
+.frame-desktop-responsivewatcheswebsite-cardnew1 {
+  top: 191px;
+  left: 128px;
+  width: 238px;
+  height: 371px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(40, 40, 40, 1);
+  transition: all ease-in-out 0.5s;
+}
+
+.frame-desktop-responsivewatcheswebsite-cardnew1:hover {
+  background-color: rgba(239, 190, 138, 1);
+}
+
+.frame-desktop-responsivewatcheswebsite-cardnew1:hover .frame-desktop-responsivewatcheswebsite-text096 {
+  color: rgba(40, 40, 40, 1);
+}
+
+.frame-desktop-responsivewatcheswebsite-newtag {
+  top: 16px;
+  left: 159px;
+  width: 63px;
+  height: 32px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(239, 190, 138, 1);
+}
+.frame-desktop-responsivewatcheswebsite-text094 {
+  top: 8px;
+  left: 16px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-new1 {
+  top: 33px;
+  left: 54px;
+  width: 130px;
+  height: 225px;
+  position: absolute;
+}
+.frame-desktop-responsivewatcheswebsite-cardtitleyprice08 {
+  top: 274px;
+  left: 55px;
+  width: 129px;
+  height: 50px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-text096 {
+  color: var(--dl-color-default-titlecolordark);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.frame-desktop-responsivewatcheswebsite-text098 {
+  top: 31px;
+  left: 45px;
+  color: var(--dl-color-default-firstcolordark);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-cardnew2 {
+  top: 184px;
+  left: 390px;
+  width: 238px;
+  height: 371px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+
+.frame-desktop-responsivewatcheswebsite-cardcontent3 {
+  top: 0px;
+  left: 0.0000029723744319198886px;
+  width: 238px;
+  height: 371px;
+  position: absolute;
+  border-color: rgba(51, 51, 51, 1);
+  border-style: solid;
+  border-width: 1px;
+}
+.frame-desktop-responsivewatcheswebsite-buttoncard1 {
+  gap: 10px;
+  top: 342px;
+  left: 43px;
+  display: flex;
+  padding: 20px 32px;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: var(--dl-color-default-firstcoloractiondark);
+}
+
+.frame-desktop-responsivewatcheswebsite-text100 {
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  font-size: 14px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-new2 {
+  top: 32px;
+  left: 54px;
+  width: 130px;
+  height: 219px;
+  position: absolute;
+}
+.frame-desktop-responsivewatcheswebsite-cardtitleyprice09 {
+  top: 268px;
+  left: 65px;
+  width: 109px;
+  height: 50px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-text102 {
+  color: var(--dl-color-default-titlecolor);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-text104 {
+  top: 31px;
+  left: 30px;
+  color: var(--dl-color-default-titlecolor);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-newtag1 {
+  top: 16px;
+  left: 157px;
+  width: 65px;
+  height: 34px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(61, 61, 61, 1);
+}
+.frame-desktop-responsivewatcheswebsite-text106 {
+  top: 8px;
+  left: 16px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-cardnew3 {
+  top: 184px;
+  left: 652px;
+  width: 238px;
+  height: 371px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(40, 40, 40, 1);
+  transition: all ease-in-out 0.5s;
+}
+
+.frame-desktop-responsivewatcheswebsite-cardnew3:hover {
+  background-color: rgba(239, 190, 138, 1);
+}
+
+.frame-desktop-responsivewatcheswebsite-cardnew3:hover .frame-desktop-responsivewatcheswebsite-text110 {
+  color: rgba(40, 40, 40, 1);
+}
+
+.frame-desktop-responsivewatcheswebsite-newtag2 {
+  top: 16px;
+  left: 157px;
+  width: 65px;
+  height: 34px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(239, 190, 138, 1);
+}
+.frame-desktop-responsivewatcheswebsite-text108 {
+  top: 8px;
+  left: 16px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-new3 {
+  top: 32px;
+  left: 54px;
+  width: 130px;
+  height: 216px;
+  position: absolute;
+}
+.frame-desktop-responsivewatcheswebsite-cardtitleyprice10 {
+  top: 273px;
+  left: 53px;
+  width: 132px;
+  height: 50px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-text110 {
+  color: var(--dl-color-default-titlecolordark);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-text112 {
+  top: 31px;
+  left: 46px;
+  color: var(--dl-color-default-firstcolordark);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-cardnew4 {
+  top: 175px;
+  left: 914px;
+  width: 238px;
+  height: 371px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(40, 40, 40, 1);
+  transition: all ease-in-out 0.5s;
+}
+
+.frame-desktop-responsivewatcheswebsite-cardnew4:hover {
+  background-color: rgba(239, 190, 138, 1);
+}
+
+.frame-desktop-responsivewatcheswebsite-cardnew4:hover .frame-desktop-responsivewatcheswebsite-text116 {
+  color: rgba(40, 40, 40, 1);
+}
+
+.frame-desktop-responsivewatcheswebsite-newtag3 {
+  top: 16px;
+  left: 157px;
+  width: 65px;
+  height: 34px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(239, 190, 138, 1);
+}
+.frame-desktop-responsivewatcheswebsite-text114 {
+  top: 8px;
+  left: 16px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-new4 {
+  top: 32px;
+  left: 54px;
+  width: 130px;
+  height: 207px;
+  position: absolute;
+}
+.frame-desktop-responsivewatcheswebsite-cardtitleyprice11 {
+  top: 273px;
+  left: 42px;
+  width: 154px;
+  height: 50px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-text116 {
+  color: var(--dl-color-default-titlecolordark);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-text118 {
+  top: 31px;
+  left: 52px;
+  color: var(--dl-color-default-firstcolordark);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-newsletter {
+  top: 4229px;
+  left: 0px;
+  width: 1280px;
+  height: 435px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: var(--dl-color-default-bodycolordark);
+}
+.frame-desktop-responsivewatcheswebsite-group3 {
+  top: 72px;
+  left: 128px;
+  width: 1024px;
+  height: 315px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(239, 190, 138, 1);
+}
+.frame-desktop-responsivewatcheswebsite-text120 {
+  top: 72px;
+  left: 72px;
+  color: var(--dl-color-default-titlecolor);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: normal;
+}
+.frame-desktop-responsivewatcheswebsite-text125 {
+  top: 180px;
+  left: 72px;
+  color: var(--dl-color-default-textcolor);
+  width: 395px;
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 139.9999976158142%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-inputnewsletter {
+  top: 129px;
+  left: 533px;
+  width: 419px;
+  height: 59px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-buttonnewsletter {
+  gap: 10px;
+  top: 0px;
+  left: 264px;
+  width: 155px;
+  display: flex;
+  padding: 20px 32px;
+  overflow: hidden;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dl-color-default-firstcoloractiondark);
+}
+.frame-desktop-responsivewatcheswebsite-text127 {
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  font-size: 16px;
+  font-style: Medium;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-inputnewsletter1 {
+  top: 0px;
+  left: 0px;
+  width: 264px;
+  height: 59px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(239, 239, 239, 1);
+}
+.frame-desktop-responsivewatcheswebsite-text129 {
+  top: 22px;
+  left: 12px;
+  color: var(--dl-color-default-textcolorlight);
+  height: auto;
+  position: absolute;
+  font-size: 13px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame-desktop-responsivewatcheswebsite-footer {
+  top: 4664px;
+  left: 0px;
+  width: 1280px;
+  height: 406px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: var(--dl-color-default-bodycolordark);
+}
+.frame-desktop-responsivewatcheswebsite-contentfooter1 {
+  top: 72px;
+  left: 140px;
+  width: 142px;
+  height: 128px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-text131 {
+  color: var(--dl-color-default-titlecolordark);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: normal;
+}
+.frame-desktop-responsivewatcheswebsite-text133 {
+  top: 47px;
+  color: var(--dl-color-default-textcolordark);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: normal;
+}
+.frame-desktop-responsivewatcheswebsite-text135 {
+  top: 78px;
+  color: var(--dl-color-default-textcolordark);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: normal;
+}
+.frame-desktop-responsivewatcheswebsite-text137 {
+  top: 109px;
+  color: var(--dl-color-default-textcolordark);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: normal;
+}
+.frame-desktop-responsivewatcheswebsite-contentfooter3 {
+  top: 72px;
+  left: 763px;
+  width: 109px;
+  height: 159px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-text139 {
+  color: var(--dl-color-default-titlecolordark);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: normal;
+}
+.frame-desktop-responsivewatcheswebsite-text141 {
+  top: 47px;
+  color: var(--dl-color-default-textcolordark);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: normal;
+}
+.frame-desktop-responsivewatcheswebsite-text143 {
+  top: 78px;
+  color: var(--dl-color-default-textcolordark);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: normal;
+}
+.frame-desktop-responsivewatcheswebsite-text145 {
+  top: 109px;
+  color: var(--dl-color-default-textcolordark);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: normal;
+}
+.frame-desktop-responsivewatcheswebsite-text147 {
+  top: 140px;
+  color: var(--dl-color-default-textcolordark);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: normal;
+}
+.frame-desktop-responsivewatcheswebsite-contentfooter2 {
+  top: 72px;
+  left: 457px;
+  width: 131px;
+  height: 159px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-text149 {
+  color: var(--dl-color-default-titlecolordark);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: normal;
+}
+.frame-desktop-responsivewatcheswebsite-text151 {
+  top: 47px;
+  color: var(--dl-color-default-textcolordark);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: normal;
+}
+.frame-desktop-responsivewatcheswebsite-text153 {
+  top: 78px;
+  color: var(--dl-color-default-textcolordark);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: normal;
+}
+.frame-desktop-responsivewatcheswebsite-text155 {
+  top: 109px;
+  color: var(--dl-color-default-textcolordark);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: normal;
+}
+.frame-desktop-responsivewatcheswebsite-text157 {
+  top: 140px;
+  color: var(--dl-color-default-textcolordark);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: normal;
+}
+.frame-desktop-responsivewatcheswebsite-contentfooter4 {
+  top: 72px;
+  left: 1047px;
+  width: 92px;
+  height: 67px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-text159 {
+  color: var(--dl-color-default-titlecolordark);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: normal;
+}
+.frame-desktop-responsivewatcheswebsite-footersocial {
+  top: 47px;
+  left: 0px;
+  width: 92px;
+  height: 20px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-bxlfacebooksvg {
+  top: 0px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+.frame-desktop-responsivewatcheswebsite-bxltwittersvg {
+  top: 0px;
+  left: 36px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+.frame-desktop-responsivewatcheswebsite-bxlinstagramsvg {
+  top: 0px;
+  left: 72px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+.frame-desktop-responsivewatcheswebsite-linefooter {
+  top: 295px;
+  left: 129px;
+  width: 1023px;
+  height: 1px;
+  position: absolute;
+}
+.frame-desktop-responsivewatcheswebsite-copyfooter {
+  top: 343px;
+  left: 544px;
+  width: 192px;
+  height: 15px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-desktop-responsivewatcheswebsite-bxcopyrightsvg {
+  top: 2px;
+  left: 0px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+}
+.frame-desktop-responsivewatcheswebsite-text161 {
+  left: 16px;
+  color: var(--dl-color-default-textcolorlight);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: normal;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: var(--dl-color-default-bodycolordark);
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+  font-size: 15px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  row-gap: 5rem;
+  margin-right: 20%;
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav__list li {
+  margin-right: 30px;
+}
+
+.nav__link {
+  color: var(--text-color);
+  font-weight: var(--font-medium);
+  transition: color .4s;
+}
+
+.nav__link:hover, .nav__link#active {
+  color: var(--dl-color-default-firstcolor);
+}
+
+.nav__contact {
+  color: var(--body-color);
+  font-weight: var(--font-medium);
+  background-color: var(--first-color);
+  border-radius: .5rem;
+  padding: .5rem 1.20rem;
+  transition: all .3s ease;
+}
+
+.nav__contact:hover {
+  color: var(--text-color);
+  border-bottom: 3px solid var(--first-color);
+  background-color: transparent;
+}
+
+.blur-header {
+  background-color: transparent;
+}
+
+.blur-header::after {
+  content: '';
+  position: absolute;
+  width: 1000%;
+  height: 100%;
+  background-color: hsla(0, 0%, 10%, .3);
+  backdrop-filter: blur(8px);
+  --webkit-backdrop-filter: blur(8px);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.cart-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: large;
+  background-color: #1e1e1e;
+  box-shadow: 0 2px 8px rgba(11, 11, 11, 0.2);
+  top: 4229px;
+  left: 0px;
+  width: 1280px;
+  height: 520px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: var(--dl-color-default-bodycolordark);
+}
+
+.cart {
+  background-color: #1e1e1e;
+  padding: 20px;
+  text-align: center;
+  margin-top: 120px;
+}
+
+.cart h2 {
+  margin-bottom: 20px;
+}
+
+.cart-items {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  justify-content: center;
+  margin: 0 auto;
+  color: #8c8c8c;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  justify-content: center;
+}
+
+.cart-item img {
+  max-width: 50px;
+  margin-right: 10px;
+}
+
+.cart-item div {
+  flex-grow: 1;
+  margin-right: 20px;
+}
+
+.cart h1 {
+  color: #efbe8a;
+}
+
+.remove-button {
+  background-color: #bc0000;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 30px;
+  transition: all ease-in-out 0.5s;
+}
+
+.remove-button:hover {
+  transform: scale(1.05);
+}
+
+.checkout {
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background-color: var(--dl-color-default-firstcoloractiondark);
+  transition: all ease-in-out 0.5s;
+}
+
+.checkout:hover {
+  transform: scale(1.05);
+}
+
+.frame-desktop-responsivewatcheswebsite-buttonproduct {
+  right: 10px;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+.frame-desktop-responsivewatcheswebsite-buttonproduct:hover {
+  transform: translateX(-18px);
+}

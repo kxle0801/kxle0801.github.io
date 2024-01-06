@@ -1,0 +1,243 @@
+:root {
+  --dl-color-gray-500: #595959;
+  --dl-color-gray-700: #999999;
+  --dl-color-gray-900: #D9D9D9;
+  --dl-size-size-large: 144px;
+  --dl-size-size-small: 48px;
+  --dl-color-danger-300: #A22020;
+  --dl-color-danger-500: #BF2626;
+  --dl-color-danger-700: #E14747;
+  --dl-color-gray-black: #000000;
+  --dl-color-gray-white: #FFFFFF;
+  --dl-size-size-medium: 96px;
+  --dl-size-size-xlarge: 192px;
+  --dl-size-size-xsmall: 16px;
+  --dl-space-space-unit: 16px;
+  --dl-color-primary-100: #003EB3;
+  --dl-color-primary-300: #0074F0;
+  --dl-color-primary-500: #14A9FF;
+  --dl-color-primary-700: #85DCFF;
+  --dl-color-success-300: #199033;
+  --dl-color-success-500: #32A94C;
+  --dl-color-success-700: #4CC366;
+  --dl-size-size-xxlarge: 288px;
+  --dl-size-size-maxwidth: 1400px;
+  --dl-radius-radius-round: 50%;
+  --dl-space-space-halfunit: 8px;
+  --dl-space-space-sixunits: 96px;
+  --dl-space-space-twounits: 32px;
+  --dl-radius-radius-radius2: 2px;
+  --dl-radius-radius-radius4: 4px;
+  --dl-radius-radius-radius8: 8px;
+  --dl-space-space-fiveunits: 80px;
+  --dl-space-space-fourunits: 64px;
+  --dl-space-space-threeunits: 48px;
+  --dl-color-default-textcolor: #595959;
+  --dl-color-default-firstcolor: rgba(255, 181, 104, 1);
+  --dl-color-default-titlecolor: #2d2d2d;
+  --dl-color-default-bordercolor: rgba(239, 239, 239, 1);
+  --dl-color-default-bodycolordark: #1e1e1e;
+  --dl-color-default-textcolordark: rgba(191, 191, 191, 1);
+  --dl-space-space-oneandhalfunits: 24px;
+  --dl-color-default-firstcolordark: #efbe8a;
+  --dl-color-default-textcolorlight: #8c8c8c;
+  --dl-color-default-titlecolordark: rgba(242, 242, 242, 1);
+  --dl-color-default-containercolordark: rgba(40, 40, 40, 1);
+  --dl-color-default-firstcoloractiondark: rgba(61, 61, 61, 1);
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  /* 
+      Change favorite color
+      Default: hsl(162, 100%, 40%)
+      Orange: hsl(14, 100%, 65%) - Blue: hsl(210, 100%, 70%)
+      Pink: hsl(356, 100%, 75%) - Purple: hsl(250, 100%, 75%)
+
+      For more colors visit: https://colors.dopely.top/color-pedia
+      -> Choose any color 
+      -> click on tab (Color Conversion)
+      -> Copy the color mode (HSL)
+  */
+
+  --hue: 8;
+  --first-color: hsl(var(--hue), 100%, 55%);
+  --first-color-alt: hsl(var(--hue), 56%, 35%);
+  --title-color: hsl(228, 8%, 95%);
+  --text-color: hsl(228, 8%, 65%);
+  --body-color: hsl(228, 15%, 20%);
+  --container-color: hsl(228, 15%, 15%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Poppins", sans-serif;
+  --biggest-font-size: 2rem;
+  --bigger-font-size: 1.25rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+@media screen and (min-width: 1152px) {
+  :root {
+    --biggest-font-size: 4rem;
+    --bigger-font-size: 2rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.button {
+  color: var(--dl-color-gray-black);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+.input {
+  color: var(--dl-color-gray-black);
+  cursor: auto;
+  padding: 0.5rem 1rem;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+.textarea {
+  color: var(--dl-color-gray-black);
+  cursor: auto;
+  padding: 0.5rem;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+.list {
+  width: 100%;
+  margin: 1em 0px 1em 0px;
+  display: block;
+  padding: 0px 0px 0px 1.5rem;
+  list-style-type: none;
+  list-style-position: outside;
+}
+.list-item {
+  display: list-item;
+}
+.teleport-show {
+  display: flex !important;
+  transform: none !important;
+}
+.Content {
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+}
+.Heading {
+  font-size: 32px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+}
+.DSmallerFontSize {
+  font-size: 13px;
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 400px;
+  font-stretch: normal;
+}
+.DBiggestFontSize {
+  font-size: 40px;
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 700px;
+  font-stretch: normal;
+}
+.DH2FontSize {
+  font-size: 24px;
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 500px;
+  font-stretch: normal;
+}
+.MH2FontSize {
+  font-size: 20px;
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 500px;
+  font-stretch: normal;
+}
+.DH1FontSize {
+  font-size: 36px;
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 500px;
+  font-stretch: normal;
+}
+.DNormalFontSize {
+  font-size: 16px;
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 400px;
+  font-stretch: normal;
+}
+.MH3FontSize {
+  font-size: 16px;
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 500px;
+  font-stretch: normal;
+}
+.MSmallFontSize {
+  font-size: 13px;
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 400px;
+  font-stretch: normal;
+}
+.DH3FontSize {
+  font-size: 20px;
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 500px;
+  font-stretch: normal;
+}
+
+.frame-desktop-responsivewatcheswebsite-socialhome {
+  display: flex;
+  flex-direction: column;
+}
+
+.frame-desktop-responsivewatcheswebsite-text,
+.frame-desktop-responsivewatcheswebsite-text002,
+.frame-desktop-responsivewatcheswebsite-text004 {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
